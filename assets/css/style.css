@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+:root {
+    --primary-font: 'Sora', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --tertiary-font: 'DM sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #1A1A1A;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho {}
+
+.cabecalho__nav {
+    background: #3f3e3e;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.cabecalho__logo {
+    font-family: var(--tertiary-font);
+    font-size: 32px;
+    font-weight: 600;
+    color: #F9F9F9;
+    margin-left: 21.625rem;
+}
+
+.logo__link {
+    text-decoration: none;
+}
+
+.cabecalho__link {
+    margin-left: 40rem;
+    width: 190px;
+    padding: 0.8em 0;
+    height: 50px;
+    border: 2px solid#899BFF;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #F9F9F9;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: var(--tertiary-font);
+}
+
+.cabecalho__link:hover {
+    background: #6471bb;
+    transition: ease-out .4s;
+}
+
+.btn {
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 1em 0;
+    background: #899BFF;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left .5s;
+}
+
+.btn.ativado:before {
+    left: 45px;
+    background-color: #0C0C0C;
+
+}
+
+.themes {
+    transition: left .5s;
+}
+
+.theme.ativado {
+    background-color: #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+
+.container {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 85vh;
+    padding: 1em;
+    border-radius: 16px;
+    margin: 10em;
+    box-shadow: #101213 0px 0px 10px 10px;
+}
+
+.container__titulo {
+    width: 600px;
+    color: #F9F9F9;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    font-size: 48px;
+}
+
+
+.container__menssagem {
+    color: #899BFF;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container__aviso {
+    color: #AEAEAE;
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 68px;
+}
+
+
+.card {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 600px;
+}
+
+input {
+    width: 600px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #212529;
+    background: #0C0C0C;
+    color: #F9F9F9;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 0.5em;
+}
+
+label {
+    color: #AEAEAE;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.btn__send {
+    height: 60px;
+    background: #899BFF;
+    color: #0C0C0C;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn__send:hover {
+    background: #6471bb;
+    transition: ease-out .4s;
+    color: #F9F9F9;
+}
+
+
+
+.rodape {
+    background: #3f3e3e;
+    text-align: center;
+    padding: 2em;
+}
+
+.rodape__titulo {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: #F9F9F9;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: #04D361;
+}

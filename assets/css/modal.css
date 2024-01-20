@@ -1,0 +1,59 @@
+.modal__enviar{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0C0C0C50;
+}
+
+.modal__content{
+    width: 800px;
+    height: 300px;
+    background-color: #0C0C0C;
+    border: 1px solid #1a1818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal__content p{
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.btn__fechar{
+    font-size: 24px;
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* sucesso ou erro */
+
+.sucesso{
+    color: #04D361;
+}
+
+.erro{
+    color: #FF3E3E;
+}
+
+.bg__sucesso{
+    background: #04D361;
+}
+
+.bg__erro{
+    background: #FF3E3E;
+}
+
+/* formulario */
+
+.erro__nome, .erro__email{
+    line-height: 30px;
+}

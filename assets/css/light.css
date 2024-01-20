@@ -1,0 +1,37 @@
+.theme.ativado{
+
+    .container{
+        box-shadow: #F9F9F9 0px 0px 10px 10px;
+    }
+
+    .cabecalho__nav {
+        background-color: #0C0C0C;
+    }
+
+    .container__titulo {
+        color: #0C0C0C;
+    }
+
+    .container__menssagem {
+        color: rgb(139, 158, 255);
+    }
+
+    .container__aviso {
+        color: #0C0C0C;
+    }
+
+
+    label {
+        color: #0C0C0C;
+    }
+
+    input {
+        background-color: #AEAEAE;
+        color: #0C0C0C;
+        border: none;
+    }
+
+    .rodape {
+        background: #0C0C0C;
+    }
+}
